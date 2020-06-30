@@ -63,6 +63,12 @@ variable "bastion_ami" {
   default     = ""
 }
 
+variable "bastion_instance_type" {
+  type        = string
+  description = "The EC2 instance type of bastion host"
+  default     = "t2-micro"
+}
+
 variable "elb_subnets" {
   type        = list(string)
   description = "List of subnet were the ELB will be deployed"
