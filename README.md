@@ -40,6 +40,7 @@ module "bastion" {
   "bastion_host_key_pair" = "my_key_pair"
   "hosted_zone_id" = "my.hosted.zone.name."
   "bastion_record_name" = "bastion.my.hosted.zone.name."
+  "create_dns_record" = true
   "elb_subnets" = [
     "subnet-id1a",
     "subnet-id1b"
