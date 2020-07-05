@@ -169,7 +169,7 @@ chmod 700 /usr/bin/bastion/sync_users
 ###########################################
 
 cat > ~/mycron << EOF
-*/5 * * * * /usr/bin/bastion/sync_s3
+#*/5 * * * * /usr/bin/bastion/sync_s3  ### Disable export of logs to s3 ###
 */5 * * * * /usr/bin/bastion/sync_users
 0 0 * * * yum -y update --security
 EOF
